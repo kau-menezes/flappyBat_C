@@ -27,6 +27,8 @@ typedef struct {
 
 } Bat;
 
+
+
 void gravity(Bat *bat)
 {
     bat->y++;
