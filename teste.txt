@@ -1,0 +1,6 @@
+ID  NOME    PONTUAÇÃO
+
+1   ROMEU   6
+2   KODA    7
+3   MOMORA  2
+4   MARIE   8
