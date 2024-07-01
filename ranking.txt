@@ -1,2 +1,25 @@
-ID	NOME	PONTUAÇÃO
-
+Nome: sasa | Pontos: 1
+Nome: fer | Pontos: 1
+Nome: fer | Pontos: 1
+Nome: fer | Pontos: 1
+Nome: fer | Pontos: 1
+Nome: fer | Pontos: 3
+Nome: fer | Pontos: 3
+Nome: fer | Pontos: 3
+Nome: fer | Pontos: 1
+Nome: fer | Pontos: 3
+Nome: fer | Pontos: 3
+Nome: fer | Pontos: 4
+Nome: Sabrina | Pontos: 12
+Nome: Sabrina | Pontos: 1
+Nome: Sabrina | Pontos: 1
+Nome: Sabrina | Pontos: 1
+Nome: sabrina | Pontos: 1
+Nome: nicolas | Pontos: 1
+Nome: nic | Pontos: 3
+Nome: sasa | Pontos: 10
+Nome: kauzinhainha | Pontos: 1
+Nome: kauaua | Pontos: 1
+Nome: cr | Pontos: 1
+Nome: Sasa | Pontos: 1
+Nome: c | Pontos: 1

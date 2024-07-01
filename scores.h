@@ -1,12 +1,10 @@
+#ifndef SCORES
+#define SCORES
+
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 
-typedef struct {
-    int score;
-    char name[20];
-
-} Player;
+#include "structs.h"
 
 typedef struct {
     int capacity;
@@ -74,7 +72,6 @@ Queue read_txt(FILE * ptr, char str[], int size)
     fgets(str, size, ptr); // Assuming header is not needed
 
     while (fgets(str, size, ptr) != NULL) {
-        printf("CARACTER:%c!!!", str[0]);
 
         if (str[0] == 'I' || str[0] == '\n') {
             printf("Skipping line.\n");
@@ -93,7 +90,7 @@ Queue read_txt(FILE * ptr, char str[], int size)
 
         enqueue(&queue, new_player);
 
-        // printf("ID: %d, Name: %s, Score: %d\n", id, name, score);
+        printf("ID: %d, Name: %s, Score: %d\n", id, name, score);
     }
 
     return queue;
@@ -105,38 +102,12 @@ void sort_ranking(Queue* queue) {
 
 void register_ranking(FILE* file, Queue queue) {
     fprintf(file, "ID\tNOME\tPONTUAÇÃO\n\n");
-
+    printf("\nooi");
     for (int i = queue.size - 1; i >= 0; i--) {
-        fprintf(file, "%d\t%s\t%d\n", i + 1, queue.array[i].name, queue.array[i].score);
+        fprintf(file, "%d\t%s\t%d\n", queue.size - i, queue.array[i].name, queue.array[i].score);
+        printf("\nooi");
+
     }
 }
 
-int main() {
-    FILE* ptr;
-    char str[50];
-    ptr = fopen("../teste.txt", "w");
-
-    if (ptr == NULL) {
-        printf("File cannot be opened.\n");
-        return 1;
-    }
-
-    Queue queue = read_txt(ptr, str, 50);
-    sort_ranking(&queue);
-
-    fclose(ptr);
-
-    FILE* output_ptr;
-    output_ptr = fopen("../ranking.txt", "w");
-
-    if (output_ptr == NULL) {
-        printf("Output file cannot be opened.\n");
-        return 1;
-    }
-
-    register_ranking(output_ptr, queue);
-
-    fclose(output_ptr);
-
-    return 0;
-}
+#endif
